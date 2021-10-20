@@ -11,7 +11,7 @@
   <tbody>
     <tr>
       <td colspan="3"><h1>A H1 heading!</h1>
-      <p>this row/cell is the header row</p></td>
+      <p>this row/cell is the <strong>header</strong> row</p></td>
     </tr>
     <tr>
       <td height="208" class="main-menu"><p>This is where my <strong>main-menu</strong> will go.</p>
@@ -20,12 +20,27 @@
       <td><p>This is my <strong>main-content</strong></p>
       <p>Things in <strong>bold</strong> are names that I may use for my CSS class names</p>
       <h2>Styling in CSS</h2>
-      <p>&nbsp;</p>
-      <h2>What is a CSS Class?</h2></td>
-      <td>&nbsp;</td>
+      <p>We can apply styles to various elements using the CSS file. We can style the html element directly:</p>
+      <code>h1 { <br>
+        color: #0066FF; <br>
+        font-size: 2em; <br>
+        font-family: sans-serif; <br>
+        }</code>
+        <p>What if you don't want to change all the h1 elements to blue? What if you want to only change specific parts of the page?</p>
+      <h2>What is a Class?</h2>
+      <p>The html elements have a class attribute which points to a class name in a style sheet. Multiple elements can use the same class name. To define a class in a style sheet write a period (.) character, followed by the name of the class.
+
+      </p>
+        <code>
+          .intro { <br>
+            background-color: yellow; <br>
+          } 
+        </code>
+    </td>
+      <td class="right-menu"><strong>right-menu</strong></td>
     </tr>
     <tr>
-      <td colspan="3">This is the <strong>footer</strong></td>
+      <td colspan="3" class="footer">This is the <strong>footer</strong></td>
     </tr>
   </tbody>
 </table>
